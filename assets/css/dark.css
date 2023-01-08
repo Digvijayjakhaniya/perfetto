@@ -1,0 +1,476 @@
+/*================================================
+Default CSS
+=================================================*/
+.switch-box {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 265px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #67696b;
+  height: 45px;
+  width: 50px;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-radius: 30px 0 0 30px;
+}
+
+.switch-box .switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.switch-box .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-box .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #cecbcb;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-box .slider:before {
+  position: absolute;
+  content: "\ec34";
+  font-family: "boxicons" !important;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  top: 0;
+  left: 6px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-box input:checked + .slider {
+  background-color: #cecbcb;
+}
+
+.switch-box input:focus + .slider {
+  background-color: #cecbcb;
+}
+
+.switch-box input:checked + .slider:before {
+  content: '\eb94';
+}
+
+.switch-box .slider.round {
+  border-radius: 50px;
+}
+
+.switch-box .slider.round:before {
+  border-radius: 50%;
+}
+
+.theme-dark body {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+.theme-dark p {
+  color: #f1f1f1;
+}
+
+.theme-dark p a {
+  color: #f1f1f1 !important;
+}
+
+.theme-dark a {
+  color: #ffffff;
+}
+
+.theme-dark .h1, .theme-dark .h2, .theme-dark .h3, .theme-dark .h4, .theme-dark .h5, .theme-dark .h6, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+  color: #ffffff !important;
+}
+
+.theme-dark .h1 a, .theme-dark .h2 a, .theme-dark .h3 a, .theme-dark .h4 a, .theme-dark .h5 a, .theme-dark .h6 a, .theme-dark h1 a, .theme-dark h2 a, .theme-dark h3 a, .theme-dark h4 a, .theme-dark h5 a, .theme-dark h6 a {
+  color: #ffffff !important;
+}
+
+.theme-dark .modal.modal-right .modal-content {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .btn-close {
+  background-color: #ffffff;
+}
+
+.theme-dark .nav-area-two .main-nav {
+  background-color: transparent !important;
+}
+
+.theme-dark .nav-area-two .main-nav .navbar-light {
+  background-color: #232222;
+}
+
+.theme-dark .nav-area-two .main-nav .navbar-light:before {
+  border-top: 84px solid #0e0e0e;
+}
+
+.theme-dark .side-nav-two .modal-btn span {
+  background-color: #ffffff;
+}
+
+.theme-dark .side-nav-two .modal-btn span:hover {
+  background-color: #fa5f0b;
+}
+
+.theme-dark .search-icon {
+  color: #ffffff;
+}
+
+.theme-dark .search-icon:hover {
+  color: #fa5f0b;
+}
+
+.theme-dark .navbar-area .main-nav {
+  background-color: #232323;
+}
+
+.theme-dark .navbar-area .main-nav:before {
+  border-top: 90px solid #0e0e0e;
+}
+
+.theme-dark .navbar-area .main-nav.menu-shrink:before {
+  border-top: 80px solid #0e0e0e;
+}
+
+.theme-dark .side-nav a {
+  color: #000000;
+}
+
+.theme-dark .side-nav a:hover {
+  color: #ffffff;
+}
+
+.theme-dark .cmn-btn {
+  color: #fa5f0b;
+}
+
+.theme-dark .navbar-light .navbar-brand .white-logo {
+  display: block;
+}
+
+.theme-dark .navbar-light .navbar-brand .main-logo {
+  display: none;
+}
+
+.theme-dark .header-contact-area .logo .white-logo {
+  display: block;
+}
+
+.theme-dark .header-contact-area .logo .main-logo {
+  display: none;
+}
+
+.theme-dark .about-area .about-content p {
+  color: #ffffff;
+}
+
+.theme-dark .about-area .about-content img:last-child {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.theme-dark .about-area .about-img-wrap .about-year {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .about-area .about-img-wrap .about-year h2 {
+  color: #ffffff;
+}
+
+.theme-dark .about-area .about-img-wrap .about-year h2 span {
+  color: #ffffff;
+}
+
+.theme-dark .benefit-area-three .benefit-content {
+  background-color: #000000;
+}
+
+.theme-dark .benefit-area-two .benefit-content p {
+  color: #ffffff;
+}
+
+.theme-dark .offer-area-two {
+  background-color: #000000;
+}
+
+.theme-dark .offer-area-two .offer-item {
+  background-color: #0e0e0e;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.theme-dark .offer-area {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .offer-item {
+  background-color: #000000;
+}
+
+.theme-dark .job-area-two {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .job-area-two .job-content p {
+  color: #ffffff;
+}
+
+.theme-dark .job-area-two .job-content ul li {
+  background-color: #000000;
+}
+
+.theme-dark .logo-area-two {
+  background-color: #000000;
+}
+
+.theme-dark .logo-area {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .service-item {
+  background-color: #000000;
+}
+
+.theme-dark .service-area-three {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .service-details-area .service-details-item .service-details-cat ul li {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .service-details-area .service-details-item .service-details-cat ul li a {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-details-item .service-details-cat ul li a:hover {
+  color: #fa5f0b;
+}
+
+.theme-dark .service-details-area .service-details-item .service-details-form .form-group .form-control {
+  background-color: #0e0e0e;
+  border: 1px solid #787777;
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-details-item .service-details-form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-details-item .service-details-form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-details-item .service-details-form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .service-details-area .service-details-item .service-details-form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .foreign-item {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  background-color: #0e0e0e;
+}
+
+.theme-dark .team-item {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .team-area-two {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .partner-area .partner-wrap {
+  background-color: #191919;
+}
+
+.theme-dark .cost-area .cost-content {
+  background-color: #000000;
+}
+
+.theme-dark .cost-area .cost-content ul li span {
+  color: #ffffff;
+}
+
+.theme-dark .blog-item .blog-inner {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .blog-details-item .blog-details-name .details-item ul li {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-item .blog-details-post ul li .post-inner a {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-item .blog-details-post ul li .post-inner a:hover {
+  color: #fa5f0b;
+}
+
+.theme-dark .blog-details-item .blog-details-quote blockquote {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-item .blog-details-robot a {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.theme-dark .blog-details-item .blog-details-search .form-group .form-control {
+  border: 1px solid #8c8b8b;
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-item .blog-details-search .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-item .blog-details-search .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-item .blog-details-search .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-item .blog-details-search .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-form {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .blog-details-area .blog-details-form .form-group .form-control {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .blog-details-area .blog-details-form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .book-area .row {
+  background-color: #242423;
+}
+
+.theme-dark .book-area .book-content:before {
+  border-top: 224px solid #242423;
+  border-right: 309px solid transparent;
+}
+
+.theme-dark .faq-area .accordion a {
+  color: #ffffff;
+  border-radius: 8px 8px 0 0;
+}
+
+.theme-dark .coming-item .coming-wrap .coming-inner {
+  background-color: #0e0e0e;
+}
+
+.theme-dark .project-details-item .project-details-img ul li {
+  color: #ffffff;
+}
+
+.theme-dark .project-details-item .project-details-mec ul li a {
+  color: #ffffff;
+}
+
+.theme-dark .project-details-item .project-details-mec ul li a:hover {
+  color: #fa5f0b;
+}
+
+.theme-dark .project-details-item .project-details-form .form-group .form-control {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.theme-dark .project-details-item .project-details-form .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .project-details-item .project-details-form .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .project-details-item .project-details-form .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .project-details-item .project-details-form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-area .contact-left ul li {
+  color: #ffffff;
+  border-bottom: 1px solid #908e8e69;
+}
+
+.theme-dark .contact-area .contact-left ul li a {
+  color: #ffffff;
+}
+
+.theme-dark .contact-area .contact-left ul li a:hover {
+  color: #fa5f0b;
+}
+
+.theme-dark .contact-area .contact-left ul li i {
+  color: #ffffff;
+}
+
+.theme-dark .contact-area .form-group .form-control {
+  border: 1px solid #6a4c3c;
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.theme-dark .contact-area .form-group .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-area .form-group .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-area .form-group .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.theme-dark .contact-area .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+/*# sourceMappingURL=dark.css.map */
